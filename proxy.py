@@ -52,7 +52,7 @@ def conn_string(conn, data, addr):
     try:
         first_line = data.split('\n')[0]
 
-        url = first_line.split(' ')[1]
+        url = first_line.split('')[1]
 
         # Find the position of ://
         http_pos = url.find("://")
